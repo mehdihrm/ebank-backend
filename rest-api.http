@@ -1,0 +1,19 @@
+POST http://localhost:8085/auth/login
+Content-Type: application/x-www-form-urlencoded
+
+username=user1&password=12345
+
+###
+GET http://localhost:8085/customers
+Accept: application/json
+Authorization: : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTcxNTk0NDM4MCwiaWF0IjoxNzE1OTQzNzgwLCJzY29wZSI6IlVTRVIifQ.u7z70bDe6PzsdfvktL8GOop_S9vAzdlpSECMewvBWgpI60V7X9CERyfBittCDOjOPxwJBweBeRKIy98kyY1Hpg
+
+
+###
+POST http://localhost:8085/customers
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTcxNTk0NDM4MCwiaWF0IjoxNzE1OTQzNzgwLCJzY29wZSI6IlVTRVIifQ.u7z70bDe6PzsdfvktL8GOop_S9vAzdlpSECMewvBWgpI60V7X9CERyfBittCDOjOPxwJBweBeRKIy98kyY1Hpg
+
+{
+  "name": "Yassine", "email": "yassine@gmail.com"
+}
